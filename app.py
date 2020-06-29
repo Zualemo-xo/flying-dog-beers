@@ -1,4 +1,4 @@
-import dash
+'''import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
@@ -60,7 +60,7 @@ app.layout = html.Div(children=[
 )
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server()'''
 
 '''#vid 5
 #working code for live graph vidp4
@@ -80,6 +80,8 @@ Y.append(1)
 
 
 app = dash.Dash(__name__)
+server = app.server
+app.title='hello'
 app.layout = html.Div(
     [
         html.H1("Live Sentiment Graph",style={"background-color":"red"}),
@@ -133,7 +135,7 @@ def update_graph_scatter(sentiment_term,n):
 if __name__ == '__main__':
     app.run_server(debug=True,use_reloader=False)'''
 
-'''#vid4
+#vid4
 import dash
 from dash.dependencies import Output, Input
 import dash_core_components as dcc
@@ -150,6 +152,8 @@ Y.append(1)
 
 
 app = dash.Dash(__name__)
+server = app.server
+app.title='hello'
 app.layout = html.Div(
     [
         dcc.Graph(id='live-graph', animate=True),
@@ -184,4 +188,4 @@ def update_graph_scatter(n):
 
 
 if __name__ == '__main__':
-    app.run_server()'''
+    app.run_server()
