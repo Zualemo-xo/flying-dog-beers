@@ -128,6 +128,7 @@ def update_graph_scatter(sentiment_term,n):
                                                     title='Term: {}'.format(sentiment_term))}
 
     except Exception as e:
+        print(str(e))
         with open('errors.txt','a') as f:
             f.write(str(e))
             f.write('\n')
