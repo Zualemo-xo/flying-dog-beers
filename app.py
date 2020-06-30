@@ -62,7 +62,7 @@ app.layout = html.Div(children=[
 if __name__ == '__main__':
     app.run_server()'''
 
-'''#vid 5
+#vid 5
 #working code for live graph vidp4
 import dash
 from dash.dependencies import Output, Input
@@ -133,9 +133,9 @@ def update_graph_scatter(sentiment_term,n):
             f.write('\n')
 
 if __name__ == '__main__':
-    app.run_server(debug=True,use_reloader=False)'''
+    app.run_server(debug=True,use_reloader=False)
 
-#vid4
+'''#vid4
 import dash
 from dash.dependencies import Output, Input
 import dash_core_components as dcc
@@ -188,4 +188,4 @@ def update_graph_scatter(n):
 
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server()'''
