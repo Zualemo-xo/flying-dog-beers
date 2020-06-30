@@ -111,7 +111,7 @@ def update_graph_scatter(sentiment_term,n):
         df['date'] = pd.to_datetime(df['unix'],unit='ms')
         df.set_index('date', inplace=True)
 
-        df = df.resample('1min').mean()
+        #df = df.resample('1min').mean()
         df.dropna(inplace=True)
         X = df.index
         Y = df.sentiment_smoothed
@@ -133,7 +133,7 @@ def update_graph_scatter(sentiment_term,n):
             f.write('\n')
 
 if __name__ == '__main__':
-    app.run_server(debug=True,use_reloader=False)
+    app.run_server()
 
 '''#vid4
 import dash
