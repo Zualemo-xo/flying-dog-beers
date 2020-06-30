@@ -86,7 +86,7 @@ app.layout = html.Div(
     [
         html.H1("Live Sentiment Graph",style={"background-color":"red"}),
         dcc.Input(id='sentiment_term', value='lockdown', type='text'),
-        dcc.Graph(id='live-graph', animate=True),
+        dcc.Graph(id='live-graph', animate=False),
         dcc.Interval(
             id='graph-update',
             interval=1000,
