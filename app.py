@@ -224,7 +224,7 @@ nltk.download('words')
 
 #df=pd.read_csv('etweets.csv')
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+app = dash.Dash(__name__)
 server = app.server
 app.title='hello'
 app.layout = html.Div(style={'margin-right': '3%','margin-left':'3%','margin-top':'2%','margin-bottom':'2%'},
