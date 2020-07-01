@@ -222,7 +222,7 @@ from nltk.probability import FreqDist
 nltk.download('stopwords')
 nltk.download('words')
 
-df=pd.read_csv('etweets.csv')
+#df=pd.read_csv('etweets.csv')
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
 server = app.server
@@ -251,7 +251,7 @@ app.layout = html.Div(style={'margin-right': '3%','margin-left':'3%','margin-top
     ])])
 
 
-def update_file():
+'''def update_file():
     global df
     df=pd.read_csv('etweets.csv')
 
@@ -328,7 +328,7 @@ def tab_content(active_tab):
         
     
 
-'''------------------------------------ HOME ------------------------------------'''
+#------------------------------------ HOME ------------------------------------
 
 @app.callback(dd.Output('live-update-graph', 'figure'),[dd.Input('interval-component', 'n_intervals')])
 def update_graph_live(n):
@@ -436,7 +436,7 @@ def return_image(id):
 
 
 
-'''------------------------------------ SEARCH BY STATE ------------------------------------'''
+#------------------------------------ SEARCH BY STATE ------------------------------------
 
 @app.callback(dd.Output("Figure1",'figure'),[dd.Input("Figure1",'id')])
 def graph(id):
@@ -522,7 +522,7 @@ def update_output_div(m):
     return fig,fig1
 
 
-'''------------------------------------ SEARCH BY KEYWORD ------------------------------------'''
+#------------------------------------ SEARCH BY KEYWORD ------------------------------------
 
 def return_tweet_words(df):
     words = set(nltk.corpus.words.words())
@@ -620,7 +620,7 @@ def return_pie_chart(id):
 
 
 
-app.config['suppress_callback_exceptions'] = True
+app.config['suppress_callback_exceptions'] = True'''
 
 if __name__ == '__main__':
-    app.run_server(debug=True, use_reloader=False)
+    app.run_server()
