@@ -60,7 +60,7 @@ app.layout = html.Div(children=[
 )
 
 if __name__ == '__main__':
-    app.run_server()'''
+    app.run_server()
 
 #vid 5
 #working code for live graph vidp4
@@ -134,7 +134,7 @@ def update_graph_scatter(sentiment_term,n):
             f.write('\n')
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server()'''
 
 '''#vid4
 import dash
