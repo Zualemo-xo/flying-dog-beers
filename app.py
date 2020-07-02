@@ -102,7 +102,7 @@ app.layout = html.Div(
               )
 def update_graph_scatter(sentiment_term,n):
     try:
-        conn = sqlite3.connect('twitter.db')
+        conn = sqlite3.connect('assets/twitter.db')
         c = conn.cursor()
         df = pd.read_sql("SELECT * FROM sentiment WHERE tweet LIKE ? ORDER BY unix DESC LIMIT 1000", conn ,params=('%' + sentiment_term + '%',))
         df.sort_values('unix', inplace=True)
@@ -134,7 +134,7 @@ def update_graph_scatter(sentiment_term,n):
             f.write('\n')
 
 if __name__ == '__main__':
-    app.run_server()'''
+    app.run_server()
 
 '''#vid4
 import dash
