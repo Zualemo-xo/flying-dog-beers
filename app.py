@@ -102,8 +102,8 @@ app.layout = html.Div(
               )
 def update_graph_scatter(sentiment_term,n):
     try:
-        conn = sqlite3.connect('assets/twitter.db')
-        c = conn.cursor()
+        conn = sqlite3.connect('assets/twitter.db',check_same_thread=False)
+        #c = conn.cursor()
         df = pd.read_sql("SELECT * FROM sentiment WHERE tweet LIKE ? ORDER BY unix DESC LIMIT 1000", conn ,params=('%' + sentiment_term + '%',))
         df.sort_values('unix', inplace=True)
         df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/2)).mean()
