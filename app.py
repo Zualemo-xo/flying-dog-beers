@@ -354,7 +354,7 @@ def return_fig_map(map_choice):
     fig.update_layout(mapbox_style="dark", mapbox_accesstoken=plotly_token)
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     return fig
-
+'''
 @app.callback(dd.Output('tweets-world', 'figure'), [dd.Input('tweets-world', 'id')])
 def return_fig_world(id):
     data=[go.Scattergeo(
@@ -434,7 +434,7 @@ def return_image(id):
     plot_wordcloud(data=d,mask=mask1,contour_color='white').save(img, format='PNG')
     return 'data:image/png;base64,{}'.format(base64.b64encode(img.getvalue()).decode())
 
-'''
+
 
 #------------------------------------ SEARCH BY STATE ------------------------------------
 
