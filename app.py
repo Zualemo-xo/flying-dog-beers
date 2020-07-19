@@ -193,13 +193,13 @@ if __name__ == '__main__':
 
 
 
-import plotly.express as px
+'''import plotly.express as px
 from plotly.subplots import make_subplots
-import plotly.graph_objs as go
+import plotly.graph_objs as go'''
 
 
 #from credentials import plotly_token  
-plotly_token='pk.eyJ1IjoiamlsbC1hbXVkaGluaSIsImEiOiJja2JxdzdxbTcwMWYxMnNxeDgwNTFyaDY0In0.EEQoKyRRzHxKypU4jSGBHA'
+#plotly_token='pk.eyJ1IjoiamlsbC1hbXVkaGluaSIsImEiOiJja2JxdzdxbTcwMWYxMnNxeDgwNTFyaDY0In0.EEQoKyRRzHxKypU4jSGBHA'
 
 import dash
 import dash.dependencies as dd
@@ -211,16 +211,16 @@ import pandas as pd
 import numpy as np
 
 #!pip install wordcloud
-from io import BytesIO
+'''from io import BytesIO
 from PIL import Image
 from wordcloud import WordCloud
-import base64
+import base64'''
 
-import nltk
+'''import nltk
 from nltk.probability import FreqDist
 
 nltk.download('stopwords')
-nltk.download('words')
+nltk.download('words')'''
 
 #df=pd.read_csv('etweets.csv')
 
