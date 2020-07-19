@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
 #vid 5
 #working code for live graph vidp4
-import dash
+'''import dash
 from dash.dependencies import Output, Input
 import dash_core_components as dcc
 import dash_html_components as html
@@ -134,7 +134,7 @@ def update_graph_scatter(sentiment_term,n):
             f.write('\n')
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server()'''
 
 '''#vid4
 import dash
@@ -193,7 +193,7 @@ if __name__ == '__main__':
 
 
 
-'''import plotly.express as px
+import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objs as go
 
@@ -248,7 +248,7 @@ app.layout = html.Div(style={'margin-right': '3%','margin-left':'3%','margin-top
             )
         ),
         dbc.CardBody(html.P(id="card-content"),style={'background':'black'},className="border border-secondary"),
-    ])])'''
+    ])])
 
 
 '''def update_file():
@@ -620,7 +620,7 @@ def return_pie_chart(id):
 
 
 
-app.config['suppress_callback_exceptions'] = True
+app.config['suppress_callback_exceptions'] = True'''
 
 if __name__ == '__main__':
-    app.run_server()'''
+    app.run_server()
