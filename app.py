@@ -251,7 +251,7 @@ app.layout = html.Div(style={'margin-right': '3%','margin-left':'3%','margin-top
     ])])
 
 
-'''def update_file():
+def update_file():
     global df
     df=pd.read_csv('etweets.csv')
 
@@ -620,7 +620,7 @@ def return_pie_chart(id):
 
 
 
-app.config['suppress_callback_exceptions'] = True'''
+app.config['suppress_callback_exceptions'] = True
 
 if __name__ == '__main__':
     app.run_server()
