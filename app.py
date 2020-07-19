@@ -330,13 +330,13 @@ def tab_content(active_tab):
 
 #------------------------------------ HOME ------------------------------------
 
-@app.callback(dd.Output('live-update-graph', 'figure'),[dd.Input('interval-component', 'n_intervals')])
+@app.callback(dash.dependencies.Output('live-update-graph', 'figure'),[dash.dependencies.Input('interval-component', 'n_intervals')])
 def update_graph_live(n):
     update_file()
     figure=px.line(df[-100:],x="Created_at",y="Sentiment_compound",template='plotly_dark')
     return figure
- '''   
     
+ '''
 @app.callback(dd.Output('tweets-map', 'figure'), [dd.Input('tweet-choice', 'value')])
 def return_fig_map(map_choice):
     if map_choice=='IN':
