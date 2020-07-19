@@ -326,7 +326,7 @@ def tab_content(active_tab):
         
         return keyword
         
-    
+''' 
 
 #------------------------------------ HOME ------------------------------------
 
@@ -615,7 +615,7 @@ def return_pie_chart(id):
     fig= px.bar_polar(d, r='Count', theta='Hashtag',
                    color='Hashtag', template="plotly_dark",
                    color_discrete_sequence= px.colors.sequential.Plasma_r)
-    return fig
+    return fig'''
 
 
 
