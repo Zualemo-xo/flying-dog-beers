@@ -222,7 +222,7 @@ from nltk.probability import FreqDist
 nltk.download('stopwords')
 nltk.download('words')'''
 
-#df=pd.read_csv('etweets.csv')
+df=pd.read_csv('etweets.csv')
 
 app = dash.Dash(__name__)
 server = app.server
