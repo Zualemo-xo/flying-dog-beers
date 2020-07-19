@@ -354,7 +354,7 @@ def return_fig_map(map_choice):
     fig.update_layout(mapbox_style="dark", mapbox_accesstoken=plotly_token)
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     return fig
-'''
+
 @app.callback(dd.Output('tweets-world', 'figure'), [dd.Input('tweets-world', 'id')])
 def return_fig_world(id):
     data=[go.Scattergeo(
@@ -411,7 +411,7 @@ def return_fig_world(id):
     fig = go.Figure(data=data, layout=layout, frames=frames)
     fig.update_layout(sliders=sliders)
     return fig
-'''
+
 @app.callback(dd.Output('sentiments-pie-chart', 'figure'), [dd.Input('sentiments-pie-chart', 'id')])
 def return_pie_chart(id):
     df3=df['Overall_sentiment'].value_counts()
