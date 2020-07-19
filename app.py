@@ -326,7 +326,7 @@ def tab_content(active_tab):
         
         return keyword
         
-''' 
+
 
 #------------------------------------ HOME ------------------------------------
 
@@ -434,7 +434,7 @@ def return_image(id):
     plot_wordcloud(data=d,mask=mask1,contour_color='white').save(img, format='PNG')
     return 'data:image/png;base64,{}'.format(base64.b64encode(img.getvalue()).decode())
 
-
+'''
 
 #------------------------------------ SEARCH BY STATE ------------------------------------
 
