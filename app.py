@@ -327,7 +327,7 @@ def tab_content(active_tab):
         return keyword
         
 
-
+'''
 #------------------------------------ HOME ------------------------------------
 
 @app.callback(dd.Output('live-update-graph', 'figure'),[dd.Input('interval-component', 'n_intervals')])
@@ -411,7 +411,7 @@ def return_fig_world(id):
     fig = go.Figure(data=data, layout=layout, frames=frames)
     fig.update_layout(sliders=sliders)
     return fig
-
+'''
 @app.callback(dd.Output('sentiments-pie-chart', 'figure'), [dd.Input('sentiments-pie-chart', 'id')])
 def return_pie_chart(id):
     df3=df['Overall_sentiment'].value_counts()
