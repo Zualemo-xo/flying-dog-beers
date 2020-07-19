@@ -216,11 +216,11 @@ from PIL import Image
 from wordcloud import WordCloud
 import base64'''
 
-'''import nltk
+import nltk
 from nltk.probability import FreqDist
 
 nltk.download('stopwords')
-nltk.download('words')'''
+nltk.download('words')
 
 df=pd.read_csv('etweets.csv')
 
